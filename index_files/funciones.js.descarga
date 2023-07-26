@@ -1,0 +1,129 @@
+function abrir(url){open(url,"_self","");}
+function inicio(){open("inicio.php","_top","");}
+	
+function popup(cual,width,height){
+	w2=width/2;
+	h2=height/2;
+	parametros="width="+width+",height="+height+",menubar=no";
+	hija = open(cual,'ventana',parametros)
+	x = (screen.width/ 2)- w2;
+	y = (screen.height/2) - h2; 
+	hija.moveTo(x, y); 
+}
+
+	
+function solo_pesos(){
+var key=window.event.keyCode;
+if ((key < 48 || key > 57)&&(key!=46)){
+window.event.keyCode=0;
+}}
+
+
+
+
+function validaforma(revisamail,forma){
+	var msj="";
+	var primero="";
+	var camposvacios=0;
+	var laforma="#"+forma+" .requerido";
+	$(laforma).each(function (index){
+		var fieldType = $(this).prop("type");
+		switch(fieldType){
+			case "select-one":
+			case "file":
+			case "textarea":
+			case "text":var valor=$(this).val();
+						if(valor==""){
+							if(primero==""){primero=$(this);}
+							$(this).addClass("marcorojo");
+							camposvacios++;
+						}
+						break;
+			case "radio":nombreradio=$(this).attr("name");
+						if(primero==""){primero=$(this);}
+						if ($("input[name='"+nombreradio+"']:checked").length <1){
+						$("input[name='"+nombreradio+"']").parent().addClass("marcorojo2");
+						camposvacios++;
+						}
+						break;
+			case "checkbox":nombreradio=$(this).attr("name");
+						if(primero==""){primero=$(this);}
+						if ($("input[name='"+nombreradio+"']:checked").length <1){
+						$("input[name='"+nombreradio+"']").parent().addClass("marcorojo2");
+						camposvacios++;
+						}
+						break;
+		}
+	})	
+	if (revisamail!=""){
+		var elcorreo=document.getElementById(revisamail).value;
+		if (elcorreo!=""){
+			if ((elcorreo.indexOf("@") == -1)||(elcorreo.indexOf(".") == -1)){
+			msj=msj+"\nCorreo electronico No válido\n";
+			}
+		}
+	}
+	if(camposvacios>0){
+		var msjidioma="Por favor llene los campos marcados en rojo";
+		alert(msjidioma+msj);
+		var position = primero.position();
+		var mitop=position.top-(50);
+		$('html,body').animate({scrollTop:mitop}, 2000);
+		return false;
+	} else {
+		$("#"+forma+" #unmomento").show();
+		return true;
+	}
+}
+$(document).ready(function(){
+	
+	$(".btn_menu").click(function(){
+		var adonde=$(this).attr("rel");
+		var position = $("#"+adonde).position();
+		var mitop=position.top-(30);
+		$('html,body').animate({scrollTop:mitop}, 2000);
+		if($("#menu_menuresponsive").is(":visible")){
+			$("#menu_menuresponsive").slideUp();
+		}
+	})
+	$(".logotipo").click(function(){
+		$('html,body').animate({scrollTop:0}, 2000);
+	})
+	$(".requerido").click(function(){
+		$(this).removeClass("marcorojo");
+		nombreradio=$(this).attr("name");
+		$("input[name='"+nombreradio+"']").parent().removeClass("marcorojo2");
+	})
+	$(".requerido").focus(function(){
+		$(this).removeClass("marcorojo");
+	})
+})
+
+
+
+function readURL(input,destino) {
+	if (input.files && input.files[0]) {
+		var reader = new FileReader();
+		reader.onload = function (e) {
+		$('#'+destino).attr('src', e.target.result);
+		}
+		reader.readAsDataURL(input.files[0]);
+	}
+}
+
+/* ==============================================================   DOCUMENT READY */
+$(document).ready(function(){
+	$(".imgpreview").change(function(){var destino=$(this).attr("data-destino");readURL(this,destino);});
+})
+/* ==============================================================   DOCUMENT READY */
+
+function habilita(n,i){
+	$("#"+n+i).removeAttr("disabled");
+	$("#"+n+i).css("color","#000");
+}
+function deshabilita(n,i){
+	$("#"+n+i).attr("disabled",true);
+	$("#"+n+i).css("color","#aaa");
+}
+
+

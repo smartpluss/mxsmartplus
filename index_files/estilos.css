@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,700');
+body{
+	margin:0px;
+	color:#000000;
+}
+
+a{text-decoration:none;color:inherit;}
+.underline{text-decoration:underline;}
+
+.borde{border:1px #df0000 solid;box-sizing:border-box;}
+.bco{color:#ffffff;}
+.fondobco{background:#ffffff;}
+
+.bold{font-weight:700 !important;}
+.enorme{font:300 50px/50px "Montserrat";}
+.grantitulo{font:300 40px/40px "Montserrat";}
+.titulo{font:300 30px/40px "Montserrat";}
+.subtitulo{font:300 24px/30px "Montserrat";}
+.normal{font:300 16px/18px "Montserrat" !important;}
+
+.italica{font-style:italic;}
+.txtdrecha{text-align:right !important;}
+.aladerecha{float:right !important;}
+
+.tabla_principal{width:100%;display:inline-block;text-align:center;margin:0px;}
+.contenidos{width:100%;max-width:1100px;text-align:center;display:inline-block;}
+
+.fondo-textura-morado{background:url(images/fondo-textura-morado.png);}
+.fondo-amarillo{background:#f6d311;}
+.fondo-beige{background:#fff4b7;}
+.fondo-verde{background:#176943;}
+.fondo-ngo{background:#000000;}
+.morado{color:#6d1f39;}
+strong{font-weight:700 !important;}
+
+.imagen100{width:100%;}
+
+/* encabezado */
+.contendor_prefixed{width:100%;text-align:center;z-index:5999;background:rgba(0,0,0,0.85);
+    position: fixed;
+    top: 0px;
+}
+
+.logotipo{display:inline-block;float:left;
+	-webkit-transition: all .3s;    -moz-transition: all .3s;    -o-transition: all .3s;    transition: all .3s;}
+.top_telefonos{width:630px;display:inline-block;vertical-align:top;margin-top:50px;
+	-webkit-transition: all .3s;    -moz-transition: all .3s;    -o-transition: all .3s;    transition: all .3s;}
+	.top_celda{width:32%;display:inline-block;font:300 24px/26px "Montserrat";text-align:left;color:#ffffff;}
+	.top_celda a{width:100%;display:inline-block;float:left;font:300 20px/20px "Montserrat";}
+.top_redes{display:inline-block;float:right;margin-top:70px;
+	-webkit-transition: all .3s;    -moz-transition: all .3s;    -o-transition: all .3s;    transition: all .3s;}
+
+/* menutop */
+#contenedor_menu{width:100%;display:inline-block;z-index:9001;background:#074d2b;
+	position: -webkit-sticky;
+    position: sticky;
+    top: 0px;}
+.menutop{width:100%;display:inline-block;height:58px;}
+.botonmenu{min-width:140px;display:inline-block;font:300 20px/58px "Montserrat";padding:0px 20px;
+	color:#ffffff;box-sizing:border-box;vertical-align:top;}
+.botonmenu:hover{background:#186843;}
+.botonmenu_sel{background:#186843;}
+
+.consubmenu{position:relative;}
+	.submenu{width:180px;display:none;background:#688477;position:relative;z-index:9000;top:5px;margin:-5px -20px;}
+	.submenu a{width:100%;display:inline-block;font:300 18px/40px "Montserrat";color:#ffffff;}
+	.submenu a:hover{background:#435a4f;}
+.consubmenu:hover .submenu{display:block;}
+.btn3{width:180px;}
+
+/* INICIO */
+.inicio-secc01{background:#57132a;border-top:4px #f6d311 solid;border-bottom:8px #f6d311 solid;padding:80px 0px;}
+.inicio-secc02{padding:50px 0px;}
+.inicio-secc02 .titulo{padding:20px 0px;}
+	.platillos-cel{position:relative;width:332px;height:244px;display:inline-block;overflow:hidden;margin:0px 10px;}
+	.platillos-cel:hover .platillos-etiqueta{top:-40px;}
+	.platillos-etiqueta{position:relative;width:100%;display:inline-block;background:#f6d311;font:300 20px/40px "Montserrat";top:0;
+	-webkit-transition: all .3s;    -moz-transition: all .3s;    -o-transition: all .3s;    transition: all .3s;}
+	.platillos-etiqueta2{font:300 18px/18px "Montserrat";height:40px;}
+.inicio-btn-vermenu{display:inline-block;border:6px #6c1e38 solid;color:#6c1e38;
+	font:700 30px/50px "Montserrat";margin:20px 0px;padding:0px 20px;
+	-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
+	
+.inicio-vercava{padding:160px 0px;}
+.inicio-fondo-vinos{background:url(images/inicio-fondo-vinos.jpg);background-attachment:fixed;}
+.inicio-btn-vercava{display:inline-block;border:6px #ffffff solid;color:#ffffff;
+	font:700 30px/50px "Montserrat";margin:20px 0px;padding:0px 20px;
+	-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
+.inicio-delicias{margin:80px 0px;}	
+
+.nuestras-casas	{padding:20px 0px;}	
+.reserva_celda{display:inline-block;width:50%;float:left;}
+.fondo-reservaciones{background:url(images/fondo-reservaciones.jpg);height:180px;}
+	.fondo-reservaciones img{margin-top:20px;}
+
+.fondo-reservaciones-comida{background:url(images/fondo-reservaciones-comida.jpg);background-size:cover;height:180px;}
+	
+.vaciotop{height:220px;display:inline-block;}
+	
+/* INICIO MAPAS */	
+.mapa_celda{display:inline-block;width:100%;float:left;margin-bottom:40px;}
+.mapa_celda:last-child{margin-bottom:0px;}
+	.mapa_celda2{display:inline-block;width:100%;float:left;margin-bottom:40px;}
+	.mapa_celda2:last-child{margin-bottom:0px;}
+.mapa_datos{display:inline-block;width:50%;float:right;font:300 16px/20px "Montserrat";vertical-align:top;
+	color:#ffffff;text-align:left;padding-left:30px;box-sizing:border-box;}
+	.mapa-datos-tit{display:inline-block;font:700 30px/40px "Montserrat";margin-top:30px;}
+	.mapa-datos-tel{font:500 22px/24px "Montserrat";}
+	.mapa-datos-txt{font:300 18px/22px "Montserrat";}
+
+.el_mapa{width:50%;display:inline-block;float:left;}
+.mapa_celda2 .el_mapa{width:25%;display:inline-block;float:left;}
+.mapa{width:100%;height:140px;overflow:hidden;position: relative;padding-bottom:15%;vertical-align:top;}
+.mapa_celda2 .mapa{width:100%;height:249px;overflow:hidden;position: relative;padding-bottom:15%;vertical-align:top;}
+#map_canvas_1{position: absolute;top:0;left:0;width: 100% !important;height: 100% !important;}
+#map_canvas_2{position: absolute;top:0;left:0;width: 100% !important;height: 100% !important;}
+#map_canvas_3{position: absolute;top:0;left:0;width: 100% !important;height: 100% !important;}
+
+
+#flecha-up{position:fixed;bottom:10px;right:10px;cursor:pointer;display:none;}
+
+
+
+/* platillos */
+.fondo-platillos{background:url(images/fondo-platillos.jpg) center bottom;min-height:450px;}
+.platillos-list{margin-top:40px;}
+.fondo-platillos .enorme{margin-top:300px;}
+.platillos-celda{width:33.3%;height:480px;display:inline-block;padding:20px;box-sizing:border-box;vertical-align:top;
+	font:300 20px/24px "Montserrat";color:#601b33;text-align:left;float:left;}
+	.platillos-celda .subtitulo{font-weight:700;margin-bottom:10px;}
+	.platillos-celda2{background:#f69211;}
+	.platillos-celda-gd{font:300 18px/18px "Montserrat";height:700px;}
+	
+.platillos-celda-plato{background:url(images/platillos-plato.png) 100px 0px;min-height:553px;background-position:top right;background-repeat:no-repeat;}
+	.platillos-plato{float:right;margin-top:100px;}
+	.platillos-celda-2{width:50%;float:left;}
+
+.platillos-btn-vermenu{display:inline-block;background:#6c1e38;color:#ffffff;
+	font:700 20px/40px "Montserrat";margin:20px 0px;padding:0px 20px;margin-top:40px;
+	-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
+
+
+/* VINOS */
+.fondo-vinos{background:url(images/fondo-vinos.jpg);min-height:450px;}
+.vino-titulos{display:inline-block;margin-top:400px;margin-bottom:200px;}
+.vino-tit1{margin:30px 0px;}
+.vino-celda{width:195px;display:inline-block;margin:40px 10px;}
+	.vino-notapie{display:inline-block;font:300 18px/18px "Montserrat";color:#792240;margin-top:20px;}
+.vino-celda img,	
+.botella-celda img{	
+	-webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;	
+}
+.vino-celda:hover img,
+.botella-celda:hover img{
+	-ms-transform: scale(1.1);    -moz-transform: scale(1.1);    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);    transform: scale(1.1);
+}
+
+.losmaspedidos-div{width:100%;height:20px;display:inline-block;background:url(images/fondo-textura-morado.png);}
+.botella-celda{width:195px;display:inline-block;margin:40px 10px;vertical-align:top;}
+	.botella-notapie{width:100%;display:inline-block;font:700 24px/26px "Montserrat";color:#792240;margin-top:20px;}
+	.botella-notapie2{display:inline-block;font:300 18px/18px "Montserrat";color:#792240;margin-top:10px;font-style:italic;}
+	
+.vino-fondo-botellas2{background:url(images/vino-fondo-botellas2.jpg);padding:150px 0px;
+	box-sizing:border-box;}	
+.btn-nuestracava{display:inline-block;border:6px #ffffff solid;color:#ffffff;
+	font:700 30px/50px "Montserrat";margin:20px 0px;padding:0px 20px;
+	-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
+
+	
+/* GALERIA */
+.galeria-mosaico{margin-top:260px;}
+[class*="galeria-celda"]{display:inline-block;background-size:cover;float:left;overflow:hidden;}
+	.galeria-celda01{width:340px;height:325px;background:url(fotos-galeria/imagen01.jpg);margin-right:30px;margin-bottom:30px;}
+	.galeria-celda02{width:720px;height:325px;background:url(fotos-galeria/imagen02.jpg);margin-bottom:30px;}
+	.galeria-celda03{width:710px;height:325px;background:url(fotos-galeria/imagen03.jpg);margin-right:30px;margin-bottom:30px;}
+.galeria-celda04{width:340px;height:680px;background:url(fotos-galeria/imagen04.jpg);margin-right:10px;float:right;}
+	.galeria-celda05{width:340px;height:325px;background:url(fotos-galeria/imagen05.jpg);margin-right:30px;margin-bottom:30px;}
+	.galeria-celda06{width:340px;height:325px;background:url(fotos-galeria/imagen06.jpg);margin-right:30px;margin-bottom:30px;}
+
+	.galeria-celda07{width:710px;height:325px;background:url(fotos-galeria/imagen07.jpg);margin-right:30px;margin-bottom:20px;}
+	.galeria-celda08{width:340px;height:325px;background:url(fotos-galeria/imagen08.jpg);margin-right:10px;float:right;}
+.galeria-celda09{width:340px;height:680px;background:url(fotos-galeria/imagen09.jpg);margin-right:30px;margin-bottom:30px;}
+	.galeria-celda10{width:710px;height:325px;background:url(fotos-galeria/imagen10.jpg);margin-right:10px;margin-bottom:30px;float:right;}
+	.galeria-celda11{width:340px;height:325px;background:url(fotos-galeria/imagen11.jpg);margin-left:10px;margin-bottom:30px;}
+	.galeria-celda12{width:340px;height:325px;background:url(fotos-galeria/imagen12.jpg);margin-left:30px;margin-bottom:30px;}
+
+	.galeria-celda13{width:340px;height:325px;background:url(fotos-galeria/imagen13.jpg);margin-right:30px;margin-bottom:30px;}
+	.galeria-celda14{width:720px;height:325px;background:url(fotos-galeria/imagen14.jpg);margin-bottom:30px;}
+	
+	.galeria-celda15{width:710px;height:325px;background:url(fotos-galeria/imagen15.jpg);margin-right:30px;margin-bottom:30px;}
+.galeria-celda16{width:340px;height:680px;background:url(fotos-galeria/imagen16.jpg);margin-right:10px;float:right;}
+	.galeria-celda17{width:340px;height:325px;background:url(fotos-galeria/imagen17.jpg);margin-right:30px;margin-bottom:30px;}
+	.galeria-celda18{width:340px;height:325px;background:url(fotos-galeria/imagen18.jpg);margin-right:30px;margin-bottom:30px;}
+
+	.galeria-celda19{width:710px;height:325px;background:url(fotos-galeria/imagen19.jpg);margin-right:30px;margin-bottom:20px;}
+	.galeria-celda20{width:340px;height:325px;background:url(fotos-galeria/imagen20.jpg);margin-right:10px;float:right;}
+
+.galeria-celda21{width:340px;height:680px;background:url(fotos-galeria/imagen21.jpg);margin-right:30px;margin-bottom:30px;}
+	.galeria-celda22{width:710px;height:325px;background:url(fotos-galeria/imagen22.jpg);margin-right:10px;margin-bottom:30px;float:right;}
+	.galeria-celda23{width:340px;height:325px;background:url(fotos-galeria/imagen23.jpg);margin-left:10px;margin-bottom:30px;}
+	.galeria-celda24{width:340px;height:325px;background:url(fotos-galeria/imagen24.jpg);margin-left:30px;margin-bottom:30px;}
+
+	.galeria-celda25{width:340px;height:325px;background:url(fotos-galeria/imagen25.jpg);margin-right:30px;margin-bottom:30px;}
+	.galeria-celda26{width:720px;height:325px;background:url(fotos-galeria/imagen26.jpg);margin-bottom:30px;}
+
+	.galeria-celda27{width:710px;height:325px;background:url(fotos-galeria/imagen27.jpg);margin-right:30px;margin-bottom:30px;}
+.galeria-celda28{width:340px;height:680px;background:url(fotos-galeria/imagen28.jpg);margin-right:10px;float:right;}
+	.galeria-celda29{width:340px;height:325px;background:url(fotos-galeria/imagen29.jpg);margin-right:30px;margin-bottom:30px;}
+	.galeria-celda30{width:340px;height:325px;background:url(fotos-galeria/imagen30.jpg);margin-right:30px;margin-bottom:30px;}
+
+	.galeria-celda31{width:710px;height:325px;background:url(fotos-galeria/imagen31.jpg);margin-right:30px;margin-bottom:20px;}
+	.galeria-celda32{width:340px;height:325px;background:url(fotos-galeria/imagen32.jpg);margin-right:10px;float:right;}
+
+.galeria-celda33{width:340px;height:680px;background:url(fotos-galeria/imagen33.jpg);margin-right:30px;margin-bottom:30px;}
+	.galeria-celda34{width:710px;height:325px;background:url(fotos-galeria/imagen34.jpg);margin-right:10px;margin-bottom:30px;float:right;}
+	.galeria-celda35{width:340px;height:325px;background:url(fotos-galeria/imagen35.jpg);margin-left:10px;margin-bottom:30px;}
+	.galeria-celda36{width:340px;height:325px;background:url(fotos-galeria/imagen36.jpg);margin-left:30px;margin-bottom:30px;}
+	
+.relleno-amarillo{width:100%;min-height:680px;display:inline-block;opacity:0;background:rgba(251,216,78,0.7);
+	font:700 30px/32px "Montserrat";color:#7c0808;padding-top:130px;box-sizing:border-box;
+	font-style:italic;
+	-webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease;
+	}
+.relleno-amarillo2	{padding-top:350px;}
+.relleno-amarillo .chica2{font:300 26px/28px "Montserrat";}
+[class*="galeria-celda"]:hover .relleno-amarillo{opacity: 1;
+}
+	
+	
+/* NUESTRAS CASAS */
+.el_mapa_fachada1{width:25%;height:300px;display:inline-block;background:url(images/fachada1.jpg);background-size:cover;}
+.el_mapa_fachada2{width:25%;height:300px;display:inline-block;background:url(images/fachada2.jpg);background-size:cover;}
+.el_mapa_fachada3{width:25%;height:300px;display:inline-block;background:url(images/fachada3.jpg);background-size:cover;}
+
+.bordemicrofono{border:8px #000000 solid;box-sizing:border-box;}
+
+
+.reserva_celda2{display:inline-block;width:50%;margin:20px 0px;}
+
+
+/* servicio-domicilio */
+.servicio-domicilio{display:inline-block;padding:40px 0px;box-sizing:border-box;}
+
+/* PIE */
+.fondo-pie{background:#000000;border-top:4px #f6d311 solid;}
+.logotipo-pie{margin:20px 0px;}
+.celda-pie{width:100%;max-width:400px;float:right;margin-top:40px;text-align:right;}
+.celda-pie img{vertical-align:middle;}
+.celda-pie .renglon{margin-bottom:10px;}
+
+/* formulario */
+.formulario{width:80%;display:inline-block;float:none;margin:20px 0px;padding:20px;background:#57132a;box-sizing:border-box;}
+#deta_form{width:100%;display:inline-block;text-align:center;}
+.formulario-secc{width:100%;display:inline-block;float:left;box-sizing:border-box;}
+.renglon{width:100%;display:inline-block;}
+
+[class*="form_"]{box-sizing:border-box;}
+[class*="form_label_"]{display:inline-block;float:left;font:700 26px/30px "Montserrat";text-align:left;
+	padding-right:5px;
+	overflow: hidden;white-space:nowrap;text-overflow:ellipsis;}
+.form_renglon{width:100%;display:inline-block;float:left;margin-bottom:10px;}
+.form_renglon2{width:50%;display:inline-block;float:left;margin-bottom:10px;}
+.form_label_2{width:16.6666666%;}
+.form_label_3{width:25%;}
+.form_label_4{width:33.3333333%;}
+.form_label_6{width:49.9999999%;}
+.form_label_8{width:66.6666666%;}
+.form_label_10{width:83.3333333%;}
+.form_label_12{width:100%;}
+
+.input_renglon{width:100%;display:inline-block;margin-bottom:20px;}
+.form_input,
+.form_area{width:100%;display:inline-block;font:500 16px/30px "Montserrat";float:left;margin:5px;box-sizing:border-box;
+	border:none;text-indent:10px;background:#cdb9c0;color:#232323;}
+.form_area{height:60px;}	
+.form_area2{height:120px;}	
+.btn_enviar{border:none;display:inline-block;cursor:pointer;float:left;padding:0px 30px;margin-top:10px;margin-right:1%;
+	font:500 26px/50px "Arial";background:#f6d311;color:#ffffff;
+	/*-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;*/
+	}
+.fecha_sinfondo{background:transparent url("images/arrowdown.png") no-repeat right center;color:#ffffff;}
+	
+
+.select-style{width:100%;display:inline-block;height:30px;margin-left:5px;float:left;padding:0;overflow: hidden;box-sizing:border-box;
+		background: transparent url("images/arrowdown.png") no-repeat right center;}
+	.select-style select{width:100%;padding:5px;border:none;box-shadow:none;background-color:transparent;box-sizing:border-box;
+			-webkit-appearance: none;-moz-appearance: none;appearance: none;
+			font:500 16px/30px "Montserrat";color:#989898;}
+	.select-style select:focus{outline: none;}
+
+	
+.mensajito{width:100%;float:right;font:500 10px/12px "Montserrat";text-align:left;text-indent:1%;}
+#unmomento{width:100%;float:left;font:500 16px/22px "Montserrat";}
+.marcorojo{background:#ffd0d0 !important;}
+.enviandomensaje{display:none;font:500 26px/30px "Montserrat";margin-top:20px;color:#000000;}
+
+
+::-webkit-input-placeholder {color:#ffffff;font-weight:bold;}
+::-moz-placeholder {color:#ffffff;font-weight:bold;}
+:-ms-input-placeholder {color:#ffffff;font-weight:bold;}
+:-moz-placeholder {color:#ffffff;font-weight:bold;}
+
+
+/*
+::-webkit-scrollbar {width: 12px;}
+::-webkit-scrollbar-track {-webkit-box-shadow: inset 0 0 6px rgba(200,200,200,0.9);border-radius: 5px;}
+::-webkit-scrollbar-thumb {border-radius: 5px;-webkit-box-shadow: inset 0 0 6px rgba(200,200,200,0.9);}
+*/
+textarea,
+input[type="text"]{
+   -moz-box-sizing:    border-box;
+   -webkit-box-sizing: border-box;
+    box-sizing:        border-box;
+}
+
+.ocultar{display:inline-block;}
+.ocultar2{display:inline-block;}
+.mostrar{display:none;}
+.mostrar2{display:none;}
+#btn_menuresponsive{display:none;position:fixed;top:10px;left:10px;}
+.menu_top_movil{display:none;}
+
+
+#icoredes_tel{display:none;}
+
+@media screen and (max-width:770px){/* cell potrait */
+#btn_menuresponsive{display:inline-block;z-index:9990;}
+	#menuresponsive{width:100%;height:100%;background:rgba(176,51,27,0.95);position:fixed;top:0px;left:0px;z-index:9900;}
+#top_telefonos{width:100%;display:none;position:fixed;top:14px;left:0;background:rgba(0,0,0,0.85);}
+	.top_celda{width:100%;font:300 24px/26px "Montserrat";text-align:center;margin:20px 0px;}
+	.top_celda a{width:100%;display:inline-block;float:nonde;}
+.top_redes{margin-top:10px;}
+	.icoredes{display:inline-block !important;width:35px;margin:5px;}
+.menutop{display:none;}	
+.botonmenu{width:100%;font:300 20px/58px "Montserrat";padding:0px 20px;
+	color:#ffffff;box-sizing:border-box;vertical-align:top;}
+
+.enorme{font:300 30px/30px "Montserrat";}
+.grantitulo{font:300 26px/26px "Montserrat";}
+.titulo{font:300 22px/22px "Montserrat";}
+.subtitulo{font:300 18px/18px "Montserrat";}
+.normal{font:300 14px/16px "Montserrat" !important;}
+
+
+/* INICIO */
+.inicio-delicias{margin:40px 0px;width:80%;}	
+.el_mapa{width:100%;}
+.mapa_datos{width:100%;float:right;font:300 16px/20px "Montserrat";vertical-align:top;}
+.reserva_celda{width:100%;float:left;}
+.platillos-cel{width:90%;margin-bottom:20px;}
+
+	.platillos-cel{display:inline-block;position:static;height:auto;overflow:visible;margin-bottom:20px;}
+	.platillos-cel img{width:100%;}	
+	.platillos-etiqueta{position:static;display:inline-block;}
+
+	
+/* PLATILLOS */
+.fondo-platillos{min-height:220px;}
+.fondo-platillos .enorme{font:300 26px/30px "Montserrat";margin-top:100px;}
+.platillos-celda{width:100%;height:auto;padding:10px;box-sizing:border-box;}
+
+.platillos-celda-plato{background:none;}
+
+
+/* GALERIA */
+.galeria-mosaico{margin-top:60px;}
+.relleno-amarillo{background:rgba(251,216,78,0);opacity:1;padding-top:20px;color:#ffffff;
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+	display:none;
+}
+
+	.galeria-celda01{width:100%;background:url(fotos-galeria-movil/imagen-01.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+	.galeria-celda02{width:100%;background:url(fotos-galeria-movil/imagen-02.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+	.galeria-celda03{width:100%;background:url(fotos-galeria-movil/imagen-03.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+.galeria-celda04{width:100%;background:url(fotos-galeria-movil/imagen-04.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+	.galeria-celda05{width:100%;background:url(fotos-galeria-movil/imagen-05.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+	.galeria-celda06{width:100%;background:url(fotos-galeria-movil/imagen-06.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+
+	.galeria-celda07{width:100%;background:url(fotos-galeria-movil/imagen-07.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+	.galeria-celda08{width:100%;background:url(fotos-galeria-movil/imagen-08.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+.galeria-celda09{width:100%;background:url(fotos-galeria-movil/imagen-09.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+	.galeria-celda10{width:100%;background:url(fotos-galeria-movil/imagen-10.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+	.galeria-celda11{width:100%;background:url(fotos-galeria-movil/imagen-11.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+	.galeria-celda12{width:100%;background:url(fotos-galeria-movil/imagen-12.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+
+	.galeria-celda13{width:100%;background:url(fotos-galeria-movil/imagen-13.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+	.galeria-celda14{width:100%;background:url(fotos-galeria-movil/imagen-14.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+	
+	.galeria-celda15{width:100%;background:url(fotos-galeria-movil/imagen-15.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+.galeria-celda16{width:100%;background:url(fotos-galeria-movil/imagen-16.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+	.galeria-celda17{width:100%;background:url(fotos-galeria-movil/imagen-17.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+	.galeria-celda18{width:100%;background:url(fotos-galeria-movil/imagen-18.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+
+	.galeria-celda19{width:100%;background:url(fotos-galeria-movil/imagen-19.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+	.galeria-celda20{width:100%;background:url(fotos-galeria-movil/imagen-20.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+
+.galeria-celda21{width:100%;background:url(fotos-galeria-movil/imagen-21.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+	.galeria-celda22{width:100%;background:url(fotos-galeria-movil/imagen-22.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+	.galeria-celda23{width:100%;background:url(fotos-galeria-movil/imagen-23.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+	.galeria-celda24{width:100%;background:url(fotos-galeria-movil/imagen-24.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+
+	.galeria-celda25{width:100%;background:url(fotos-galeria-movil/imagen-25.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+	.galeria-celda26{width:100%;background:url(fotos-galeria-movil/imagen-26.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+
+	.galeria-celda27{width:100%;background:url(fotos-galeria-movil/imagen-27.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+.galeria-celda28{width:100%;background:url(fotos-galeria-movil/imagen-28.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+	.galeria-celda29{width:100%;background:url(fotos-galeria-movil/imagen-29.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+	.galeria-celda30{width:100%;background:url(fotos-galeria-movil/imagen-30.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+
+	.galeria-celda31{width:100%;background:url(fotos-galeria-movil/imagen-31.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+	.galeria-celda32{width:100%;background:url(fotos-galeria-movil/imagen-32.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+
+.galeria-celda33{width:100%;background:url(fotos-galeria-movil/imagen-33.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+	.galeria-celda34{width:100%;background:url(fotos-galeria-movil/imagen-34.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+	.galeria-celda35{width:100%;background:url(fotos-galeria-movil/imagen-35.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+	.galeria-celda36{width:100%;background:url(fotos-galeria-movil/imagen-36.jpg) center center;background-position:bottom;background-repeat:no-repeat;background-size:cover;}
+	
+[class*="galeria-celda"]{width:100%;height:480px;margin:0px;padding:0px;margin-bottom:20px;}
+
+
+
+
+
+
+
+
+
+
+.platillos-celda-btn{text-align:center;}
+
+
+[class*="el_mapa_fachada"]{width:100%;margin:0px;padding:0px;}
+.mapa_celda2 .el_mapa{width:100%;}
+.fondo-verde{background:#074c2d;}
+.fondo-reservaciones{background:#074c2d;height:auto;margin:0px;text-align:center;}
+	.casas_reserva{width:90%;display:inline-block;margin:20px 0px;}
+
+	
+.vaciotop{height:64px;display:inline-block;}
+
+.formulario{width:100%;margin:0px;padding:10px;}
+[class*="form_label_"]{width:100%;font:700 16px/18px "Montserrat";}
+#imgreserva{width:80%;}
+	
+.div{border:1px #dfee00 solid;}
+
+.celda-pie{float:none;text-align:center;}
+
+.ocultar{display:none;}
+.mostrar{display:inline-block;}
+
+}/* media */
+
+@media screen and (max-width:740px){/* cell potrait */
+
+.logotipo{width:80px;margin-left:50px;}
+
+
+}/* media */
+
+
+@media screen and (max-width:440px){/* cell potrait */
+
+[class*="galeria-celda"]{width:100%;height:300px;}
+
+}/* media */
